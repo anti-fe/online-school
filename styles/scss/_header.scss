@@ -10,6 +10,10 @@
         margin-top: 110px;
         margin-bottom: 126px;
         position: relative;
+        @media (max-width: 400px) {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
     }
     &__screen-photo {
         @media (max-width: 892px) {
@@ -99,6 +103,9 @@
     }
     &__main-text {
         margin-bottom: 56px;
+        @media (max-width: 400px) {
+            margin-bottom: 30px;
+        }
     }
     &__above-title {
         @include text-h5;
@@ -150,7 +157,7 @@
         &:focus {
             background-color: $c-primary-hover;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 400px) {
             padding: 15px 30px;
             margin-right: 0;
             margin-bottom: 10px;
@@ -326,6 +333,12 @@
     -o-transition: all .3s ease;
     @media (max-width: 992px) {
         padding: 20px 30px;
+    }
+    @media (max-width: 546px) {
+        @include flex(space-between, center, row)
+    }
+    @media (max-width: 426px) {
+        @include flex(space-between, center, column)
     }
     &:hover {
         transform: translateY(-10px);

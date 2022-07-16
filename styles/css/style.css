@@ -101,6 +101,13 @@ a {
   position: relative;
 }
 
+@media (max-width: 400px) {
+  .header__screen {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
 @media (max-width: 892px) {
   .header__screen-photo {
     opacity: .3;
@@ -227,6 +234,12 @@ a {
   margin-bottom: 56px;
 }
 
+@media (max-width: 400px) {
+  .header__main-text {
+    margin-bottom: 30px;
+  }
+}
+
 .header__above-title {
   font-weight: 700;
   font-size: 16px;
@@ -314,7 +327,7 @@ a {
   background-color: #87A871;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .header__get-quote {
     padding: 15px 30px;
     margin-right: 0;
@@ -556,6 +569,24 @@ a {
 @media (max-width: 992px) {
   .card {
     padding: 20px 30px;
+  }
+}
+
+@media (max-width: 546px) {
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 426px) {
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
