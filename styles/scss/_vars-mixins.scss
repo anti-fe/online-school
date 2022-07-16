@@ -1,8 +1,10 @@
 // COLORS
 $c-primary: #96BB7C;
+$c-primary-hover: #87A871;
 $c-danger: #E74040;
 $c-muted: #BDBDBD;
 $c-text: #252B42;
+$c-text-light: #fff;
 $c-second-text: #737373;
 $c-second-text-2: #FFAB71;
 $c-bg-dark: #2D4059;
@@ -12,7 +14,7 @@ $c-bg-light: #fff;
 @mixin text-h1 {
     font-weight: 700;
     font-size: 58px;
-    line-height: 80px;
+    line-height: 65px;
     letter-spacing: .2px;
 }
 @mixin text-h2 {
@@ -30,7 +32,7 @@ $c-bg-light: #fff;
 @mixin text-h4 {
     font-weight: 400;
     font-size: 20px;
-    line-height: 30x;
+    line-height: 30px;
     letter-spacing: .2px;
 }
 @mixin text-h5 {
@@ -64,8 +66,38 @@ $c-bg-light: #fff;
     letter-spacing: .2px;
 }
 @mixin text-btn {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: .2px;
+}
+@mixin flex($jc, $ai, $fd) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
+@mixin main-btn($py, $px) {
+    cursor: pointer;
+    background-color: $c-primary;
+    color: $c-text-light;
+    padding: $py $px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+@mixin secondary-btn($py, $px) {
+    cursor: pointer;
+    background-color: transparent;
+    color: $c-primary;
+    padding: $py $px;
+    border: 1px solid $c-primary;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }

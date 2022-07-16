@@ -12,6 +12,9 @@
     margin: 0 auto;
 }
 
+.btn-arrow_green {fill: $c-primary;}
+.btn-arrow_white {fill: $c-text-light;}
+
 h1 {@include text-h1;}
 h2 {@include text-h2;}
 h3 {@include text-h3;}
@@ -19,3 +22,7 @@ h4 {@include text-h4;}
 h5 {@include text-h5;}
 h6 {@include text-h6;}
 p {@include text-p;}
+
+a {
+    text-decoration: none;
+}
