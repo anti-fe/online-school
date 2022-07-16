@@ -1,0 +1,21 @@
+@import "vars-mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cont {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+h1 {@include text-h1;}
+h2 {@include text-h2;}
+h3 {@include text-h3;}
+h4 {@include text-h4;}
+h5 {@include text-h5;}
+h6 {@include text-h6;}
+p {@include text-p;}

@@ -1,0 +1,71 @@
+// COLORS
+$c-primary: #96BB7C;
+$c-danger: #E74040;
+$c-muted: #BDBDBD;
+$c-text: #252B42;
+$c-second-text: #737373;
+$c-second-text-2: #FFAB71;
+$c-bg-dark: #2D4059;
+$c-bg-light: #fff;
+
+//FONTS
+@mixin text-h1 {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: .2px;
+}
+@mixin text-h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: .2px;
+}
+@mixin text-h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: .2px;
+}
+@mixin text-h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30x;
+    letter-spacing: .2px;
+}
+@mixin text-h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .2px;
+}
+@mixin text-h6 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: .2px;
+}
+@mixin text-p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .2px;
+}
+@mixin text-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: .2px;
+}
+@mixin text-small {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .2px;
+}
+@mixin text-btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: .2px;
+}
