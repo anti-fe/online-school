@@ -5,9 +5,19 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .cont {
   max-width: 1050px;
   margin: 0 auto;
+}
+
+@media (max-width: 1115px) {
+  .cont {
+    padding: 0 15px;
+  }
 }
 
 .btn-arrow_green {
@@ -91,6 +101,18 @@ a {
   position: relative;
 }
 
+@media (max-width: 892px) {
+  .header__screen-photo {
+    opacity: .3;
+  }
+}
+
+@media (max-width: 520px) {
+  .header__screen-photo {
+    display: none;
+  }
+}
+
 .header__main-photo, .header__vector, .header__circle, .header__fill-vector, .header__rect {
   user-select: none;
   pointer-events: none;
@@ -103,11 +125,39 @@ a {
   z-index: 5;
 }
 
+@media (max-width: 1040px) {
+  .header__main-photo {
+    height: 400px;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 892px) {
+  .header__main-photo {
+    z-index: -1;
+  }
+}
+
 .header__vector {
   position: absolute;
   top: 30px;
   right: -90px;
   z-index: 4;
+}
+
+@media (max-width: 1040px) {
+  .header__vector {
+    height: 250px;
+    right: -120px;
+    top: 100px;
+  }
+}
+
+@media (max-width: 892px) {
+  .header__vector {
+    z-index: -2;
+  }
 }
 
 .header__circle {
@@ -117,6 +167,20 @@ a {
   z-index: 4;
 }
 
+@media (max-width: 1040px) {
+  .header__circle {
+    height: 30px;
+    right: 300px;
+    top: 100px;
+  }
+}
+
+@media (max-width: 892px) {
+  .header__circle {
+    z-index: -2;
+  }
+}
+
 .header__fill-vector {
   position: absolute;
   top: 78px;
@@ -124,11 +188,39 @@ a {
   z-index: 3;
 }
 
+@media (max-width: 1040px) {
+  .header__fill-vector {
+    height: 200px;
+    top: 165px;
+    right: 69px;
+  }
+}
+
+@media (max-width: 892px) {
+  .header__fill-vector {
+    z-index: -3;
+  }
+}
+
 .header__rect {
   position: absolute;
   top: -85px;
   right: -76px;
   z-index: 2;
+}
+
+@media (max-width: 1040px) {
+  .header__rect {
+    top: 0px;
+    right: -76px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 892px) {
+  .header__rect {
+    z-index: -4;
+  }
 }
 
 .header__main-text {
@@ -154,6 +246,13 @@ a {
   max-width: 542px;
 }
 
+@media (max-width: 600px) {
+  .header__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
 .header__descr {
   font-weight: 400;
   font-size: 20px;
@@ -169,6 +268,14 @@ a {
   align-items: center;
   flex-direction: row;
   max-width: fit-content;
+}
+
+@media (max-width: 400px) {
+  .header__btns {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 100%;
+  }
 }
 
 .header__get-quote {
@@ -207,9 +314,17 @@ a {
   background-color: #87A871;
 }
 
+@media (max-width: 600px) {
+  .header__get-quote {
+    padding: 15px 30px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
 .header__more {
   cursor: pointer;
-  background-color: transparent;
+  background-color: #fff;
   color: #96BB7C;
   padding: 15px 40px;
   border: 1px solid #96BB7C;
@@ -241,10 +356,30 @@ a {
   background-color: #f3f3f3;
 }
 
+@media (max-width: 600px) {
+  .header__more {
+    padding: 15px 30px;
+  }
+}
+
 .header__cards-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(270px, 1fr));
-  column-gap: 30px;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .header__cards-list {
+    grid-template-columns: repeat(1, minmax(220px, 500px));
+    justify-content: center;
+  }
+}
+
+@media (max-width: 546px) {
+  .header__cards-list {
+    grid-template-columns: repeat(1, minmax(220px, 500px));
+    justify-content: center;
+  }
 }
 
 .nav__logo {
@@ -261,6 +396,12 @@ a {
   align-items: center;
   flex-direction: row;
   list-style-type: none;
+}
+
+@media (max-width: 826px) {
+  .nav__list {
+    display: none;
+  }
 }
 
 .nav__item {
@@ -313,6 +454,12 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+
+@media (max-width: 480px) {
+  .nav__btns {
+    display: none;
+  }
 }
 
 .nav__login {
@@ -390,6 +537,10 @@ a {
   -o-transition: all .3s ease;
 }
 
+.nav__burger-menu {
+  display: block;
+}
+
 .card {
   z-index: 50;
   background-color: #fff;
@@ -400,6 +551,12 @@ a {
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
+}
+
+@media (max-width: 992px) {
+  .card {
+    padding: 20px 30px;
+  }
 }
 
 .card:hover {

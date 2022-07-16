@@ -11,6 +11,14 @@
         margin-bottom: 126px;
         position: relative;
     }
+    &__screen-photo {
+        @media (max-width: 892px) {
+            opacity: .3;
+        }
+        @media (max-width: 520px) {
+            display: none;
+        }
+    }
     &__main-photo,
     &__vector,
     &__circle,
@@ -24,30 +32,70 @@
         right: -90px;
         top: -130px;
         z-index: 5;
+        @media (max-width: 1040px) {
+            height: 400px;
+            right: 0;
+            top: 0;
+        }
+        @media (max-width: 892px) {
+            z-index: -1;
+        }
     }
     &__vector {
         position: absolute;
         top: 30px;
         right: -90px;
         z-index: 4;
+        @media (max-width: 1040px) {
+            height: 250px;
+            right: -120px;
+            top: 100px;
+        }
+        @media (max-width: 892px) {
+            z-index: -2;
+        }
     }
     &__circle {
         position: absolute;
         top: 61px;
         right: 436px;
         z-index: 4;
+        @media (max-width: 1040px) {
+            height: 30px;
+            right: 300px;
+            top: 100px;
+        }
+        @media (max-width: 892px) {
+            z-index: -2;
+        }
     }
     &__fill-vector {
         position: absolute;
         top: 78px;
         right: -22px;
         z-index: 3;
+        @media (max-width: 1040px) {
+            height: 200px;
+            top: 165px;
+            right: 69px;
+        }
+        @media (max-width: 892px) {
+            z-index: -3;
+        }
     }
     &__rect {
         position: absolute;
         top: -85px;
         right: -76px;
         z-index: 2;
+        @media (max-width: 1040px) {
+            top: 0px;
+            right: -76px;
+            height: 400px;
+        }
+        @media (max-width: 892px) {
+            z-index: -4;
+        }
     }
     &__main-text {
         margin-bottom: 56px;
@@ -62,6 +110,10 @@
         color: $c-text;
         margin-bottom: 15px;
         max-width: 542px;
+        @media (max-width: 600px) {
+            font-size: 36px;
+            line-height: 40px;
+        }
     }
     &__descr {
         @include text-h4;
@@ -71,6 +123,12 @@
     &__btns {
         @include flex(center, center, row);
         max-width: fit-content;
+        @media (max-width: 400px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            min-width: 100%;
+
+        }
     }
     &__get-quote {
         @include main-btn(15px,40px);
@@ -92,6 +150,11 @@
         &:focus {
             background-color: $c-primary-hover;
         }
+        @media (max-width: 600px) {
+            padding: 15px 30px;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
     }
     &__more {
         @include secondary-btn(15px,40px);
@@ -111,11 +174,22 @@
         &:focus {
             background-color: rgb(243, 243, 243);
         }
+        @media (max-width: 600px) {
+            padding: 15px 30px;
+        }
     }
     &__cards-list {
         display: grid;
-        grid-template-columns: repeat(3, minmax(270px, 1fr));
-        column-gap: 30px;
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
+        gap: 30px;
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(1, minmax(220px, 500px));
+            justify-content: center;
+        }
+        @media (max-width: 546px) {
+            grid-template-columns: repeat(1, minmax(220px, 500px));
+            justify-content: center;
+        }
     }
 }
 .nav {
@@ -129,6 +203,9 @@
     &__list {
         @include flex(center, center, row);
         list-style-type: none;
+        @media (max-width: 826px) {
+            display: none;
+        }
     }
     &__item {
         position: relative;
@@ -168,6 +245,9 @@
     }
     &__btns {
         @include flex(center, center, row);
+        @media (max-width: 480px) {
+            display: none;
+        }
     }
     &__login {
         @include text-btn;
@@ -230,6 +310,9 @@
         -ms-transition: all .3s ease;
         -o-transition: all .3s ease;
     }
+    &__burger-menu {
+        display: block;
+    }
 }
 .card {
     z-index: 50;
@@ -241,6 +324,9 @@
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
+    @media (max-width: 992px) {
+        padding: 20px 30px;
+    }
     &:hover {
         transform: translateY(-10px);
         -webkit-transform: translateY(-10px);

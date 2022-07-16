@@ -91,7 +91,7 @@ $c-bg-light: #fff;
 }
 @mixin secondary-btn($py, $px) {
     cursor: pointer;
-    background-color: transparent;
+    background-color: $c-bg-light;
     color: $c-primary;
     padding: $py $px;
     border: 1px solid $c-primary;
