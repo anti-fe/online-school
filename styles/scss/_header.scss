@@ -1,5 +1,4 @@
 .header {
-    height: 95vh;
     &__nav {
         @include flex(space-between, center, row);
         margin: 16px 0px;
