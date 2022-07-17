@@ -1,0 +1,208 @@
+.teachers {
+    margin-top: 80px;
+    padding: 80px 0;
+    background-color: #FFF9F9;
+    &__header {
+        margin-bottom: 60px;
+        & > *:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    &__above-title {
+        @include text-h6;
+        color: $c-primary;
+    }
+    &__title {
+        @include text-h2;
+        color: $c-text;
+    }
+    &__descr {
+        @include text-p;
+        color: $c-second-text;
+        max-width: 463px;
+    }
+    &__cards-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        
+    }
+    &__card {
+        background-color: $c-bg-light;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        &:hover {
+            transform:translateY(-10px);
+            -webkit-transform:translateY(-10px);
+            -moz-transform:translateY(-10px);
+            -ms-transform:translateY(-10px);
+            -o-transform:translateY(-10px);
+}
+}
+    &__card:nth-child(1) &__card-header {background-image: url(../../img/teachers/teacher-1.jpg)}
+    &__card:nth-child(2) &__card-header {background-image: url(../../img/teachers/teacher-2.jpg)}
+    &__card:nth-child(3) &__card-header {background-image: url(../../img/teachers/teacher-3.jpg)}
+    &__card &__card-header {
+        @include flex(space-between, center, column);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+        padding: 20px 12px 24px 12px; 
+        height: 300px;
+        @media (max-width: 907px) {
+            height: 200px;
+        }
+    }
+    &__card-top, &__card-bottom {width: 100%}
+    &__card-tag {
+        @include text-h6;
+        background-color: $c-danger;
+        color: $c-text-light;
+        max-width: fit-content;
+        padding: 0 10px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }   
+    &__card-bottom {
+        @include flex(center, center, row);
+    }
+    &__card-actions {
+        @include flex(center, center, row);
+        gap: 10px;  
+    }
+    &__card-btn {
+        @include flex(center, center, row);
+        cursor: pointer;
+        background-color: $c-bg-light;
+        height: 50px;
+        width: 50px;
+        border: none;
+        border-radius: 45px;
+        -webkit-border-radius: 45px;
+        -moz-border-radius: 45px;
+        -ms-border-radius: 45px;
+        -o-border-radius: 45px;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        &:hover {
+            transform: translateY(-3px);
+            -webkit-transform: translateY(-3px);
+            -moz-transform: translateY(-3px);
+            -ms-transform: translateY(-3px);
+            -o-transform: translateY(-3px);
+            box-shadow: 0px 18px 7px rgba(255, 255, 255, 0.05),
+                        0px 10px 6px rgba(255, 255, 255, 0.06), 
+                        0px 5px 5px rgba(255, 255, 255, 0.05), 
+                        0px 1px 2px rgba(255, 255, 255, 0.05), 
+                        0px 0px 0px rgba(255, 255, 255, 0.05);
+        }
+    }
+    &__card-body {
+        padding: 25px 25px 35px 25px;
+    }
+    &__card-category {
+        @include flex(space-between, center, row);
+        margin-bottom: 10px;
+    }
+    &__card-stat {
+        @include text-link;
+        color: $c-primary
+    }
+    &__card-rating {
+        @include flex(center,center,row);
+        background-color: $c-bg-dark;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        max-width: 50px;
+        padding: 5px;
+    }
+    &__card-rating-num {
+        @include text-small;
+        color: $c-text-light;
+    }
+    &__card-star {
+        margin-right: 5px;
+    }
+    &__card-title {
+        @include text-h5;
+        color: $c-text;
+        margin-bottom: 10px;
+    }
+    &__card-descr {
+        @include text-p;
+        color: $c-second-text;
+        margin-bottom: 20px;
+    }
+    &__card-sales {
+        @include flex(center, center, row);
+        margin-bottom: 10px;
+        max-width: fit-content;
+    }
+    &__card-sales-num {
+        @include text-h6;
+        color: $c-second-text;
+        margin-left: 10px;
+    }
+    &__card-price {
+        @include flex(center, center, row);
+        margin-bottom: 20px;
+        max-width: fit-content;
+    }
+    &__card-price-now, &__card-price-old {
+        @include text-h5;
+    }
+    &__card-price-now {
+        color: $c-second-text-2;
+        margin-right: 10px;
+    }
+    &__card-price-old {
+        color: $c-muted;
+        text-decoration: line-through;
+    }
+    &__card-btn-more {
+        @include text-h6;
+        color: $c-primary;
+        padding: 10px 20px;
+        border: 1px solid $c-primary;
+        background-color: $c-bg-light;
+        border-radius: 37px;
+        -webkit-border-radius: 37px;
+        -moz-border-radius: 37px;
+        -ms-border-radius: 37px;
+        -o-border-radius: 37px;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        &:hover > svg {
+            transform: translateX(3px);
+            -webkit-transform: translateX(3px);
+            -moz-transform: translateX(3px);
+            -ms-transform: translateX(3px);
+            -o-transform: translateX(3px);
+        }
+    }
+    &__card-arrow {
+        fill: $c-primary;
+        margin-left: 10px;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+    }
+
+}
