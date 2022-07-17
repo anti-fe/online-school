@@ -1,6 +1,10 @@
 .reviews {
     margin-top: 80px;
     padding: 80px 15px;
+    @media (max-width: 426px) {
+        padding: 50px 15px;
+        margin-top: 50px;
+    }   
     &__header {
         margin-bottom: 60px;
         & > *:not(:last-child) {

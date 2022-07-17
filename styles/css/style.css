@@ -735,6 +735,13 @@ a {
   }
 }
 
+@media (max-width: 426px) {
+  .client {
+    padding: 50px 0;
+    margin-top: 50px;
+  }
+}
+
 .client__title {
   font-weight: 700;
   font-size: 40px;
@@ -819,8 +826,15 @@ a {
 
 .teachers {
   margin-top: 80px;
-  padding: 80px 0;
+  padding: 80px 15px;
   background-color: #FFF9F9;
+}
+
+@media (max-width: 426px) {
+  .teachers {
+    padding: 50px 15px;
+    margin-top: 50px;
+  }
 }
 
 .teachers__header {
@@ -1148,6 +1162,13 @@ a {
 .reviews {
   margin-top: 80px;
   padding: 80px 15px;
+}
+
+@media (max-width: 426px) {
+  .reviews {
+    padding: 50px 15px;
+    margin-top: 50px;
+  }
 }
 
 .reviews__header {
