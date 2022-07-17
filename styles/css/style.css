@@ -1104,4 +1104,157 @@ a {
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
 }
+
+.reviews {
+  margin-top: 80px;
+  padding: 80px 15px;
+}
+
+.reviews__header {
+  margin-bottom: 60px;
+}
+
+.reviews__header > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.reviews__above-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .2px;
+  color: #96BB7C;
+}
+
+.reviews__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: .2px;
+  color: #252B42;
+}
+
+.reviews__descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .2px;
+  color: #737373;
+  max-width: 463px;
+}
+
+.reviews__cards-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+@media (max-width: 992px) {
+  .reviews__cards-list {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .reviews__cards-list {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+
+.reviews__cards-list > *:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0%;
+  left: 0;
+  background-color: #F3F3F3;
+}
+
+@media (max-width: 992px) {
+  .reviews__cards-list > *:nth-child(3) {
+    grid-column: 1/3;
+  }
+}
+
+@media (max-width: 620px) {
+  .reviews__cards-list > *:nth-child(3) {
+    grid-column: auto;
+  }
+}
+
+.reviews__card {
+  position: relative;
+  padding: 25px 15px;
+  background-color: #fff;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+
+.reviews__card:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.reviews__card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.reviews__card-rating {
+  max-width: fit-content;
+  margin-bottom: 15px;
+}
+
+.reviews__card-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .2px;
+  color: #737373;
+  max-width: 245px;
+  text-align: center;
+}
+
+.reviews__author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.reviews__author-photo {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-right: 15px;
+}
+
+.reviews__author-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .2px;
+  color: #96BB7C;
+}
+
+.reviews__author-work {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .2px;
+  color: #252B42;
+}
 /*# sourceMappingURL=style.css.map */
