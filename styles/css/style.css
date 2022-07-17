@@ -701,4 +701,101 @@ a {
   color: #252B42;
   text-align: center;
 }
+
+.client {
+  margin-top: 80px;
+  padding: 80px 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+@media (max-width: 620px) {
+  .client {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
+
+.client__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: .2px;
+  color: #252B42;
+  margin-bottom: 42px;
+  position: relative;
+}
+
+.client__title::after {
+  content: '';
+  height: 2px;
+  width: 70px;
+  background-color: #E74040;
+  bottom: -18px;
+  left: 0;
+  position: absolute;
+}
+
+.client__descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .2px;
+  color: #737373;
+  margin-bottom: 35px;
+  max-width: 375px;
+}
+
+.client__btn-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .2px;
+  color: #96BB7C;
+  max-width: fit-content;
+}
+
+.client__btn-more:hover svg {
+  transform: translateX(3px);
+  -webkit-transform: translateX(3px);
+  -moz-transform: translateX(3px);
+  -ms-transform: translateX(3px);
+  -o-transform: translateX(3px);
+}
+
+.client__btn-arrow {
+  fill: #96BB7C;
+  margin-left: 10px;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+
+.client__photo-block {
+  user-select: none;
+  pointer-events: none;
+  transform: translateY(-92px);
+  -webkit-transform: translateY(-92px);
+  -moz-transform: translateY(-92px);
+  -ms-transform: translateY(-92px);
+  -o-transform: translateY(-92px);
+}
+
+@media (max-width: 992px) {
+  .client__photo-block {
+    height: 250px;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}
 /*# sourceMappingURL=style.css.map */

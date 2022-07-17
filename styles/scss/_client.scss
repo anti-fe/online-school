@@ -1,0 +1,72 @@
+.client {
+    margin-top: 80px;
+    padding: 80px 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    @media (max-width: 620px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;      
+    }
+    &__title {
+        @include text-h2;
+        color: $c-text;
+        margin-bottom: 42px;
+        position: relative;
+        &::after {
+            content: '';
+            height: 2px;
+            width: 70px;
+            background-color: $c-danger;
+            bottom: -18px;
+            left: 0;
+            position: absolute;
+        }
+    }
+    &__descr {
+        @include text-p;
+        color: $c-second-text;
+        margin-bottom: 35px;
+        max-width: 375px;
+    }
+    &__btn-more {
+        @include flex(center,center,row);
+        @include text-link;
+        color: $c-primary;
+        max-width: fit-content;
+        &:hover svg {
+            transform: translateX(3px);
+            -webkit-transform: translateX(3px);
+            -moz-transform: translateX(3px);
+            -ms-transform: translateX(3px);
+            -o-transform: translateX(3px);
+        }
+    }
+    &__btn-arrow {
+        fill: $c-primary;
+        margin-left: 10px;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+    }
+    &__photo-block {
+        user-select: none;
+        pointer-events: none;
+        transform: translateY(-92px);
+        -webkit-transform: translateY(-92px);
+        -moz-transform: translateY(-92px);
+        -ms-transform: translateY(-92px);
+        -o-transform: translateY(-92px);
+        @media (max-width: 992px) {
+            height: 250px;
+            transform: translateY(0px);
+            -webkit-transform: translateY(0px);
+            -moz-transform: translateY(0px);
+            -ms-transform: translateY(0px);
+            -o-transform: translateY(0px);
+        }
+        
+    }
+}
