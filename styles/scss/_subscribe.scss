@@ -1,0 +1,90 @@
+.subscribe {
+    margin-top: 80px;
+    padding: 80px 15px;
+    @media (max-width: 426px) {
+        padding: 50px 15px;
+        margin-top: 50px;
+    }
+    &__header {
+        margin-bottom: 60px;
+        & > *:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    &__above-title {
+        @include text-h6;
+        color: $c-primary;
+        text-align: center;
+    }
+    &__title {
+        @include text-h2;
+        color: $c-text;
+        text-align: center;
+    }
+    &__descr {
+        @include text-p;
+        color: $c-second-text;
+        max-width: 463px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__form {
+        @include flex(center,normal,row);
+        max-width: 460px;
+        width: 100%;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        margin: 0 auto;
+    }
+    &__input {
+        font-size: 14px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        color: $c-text;
+        padding: 8px 20px 7px 20px;
+        outline: none;
+        background: #F9F9F9;
+        border: 1px solid #E6E6E6;
+        width: 100%;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        &::placeholder {
+            font-size: 14px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+            opacity: .5;
+            color: $c-second-text;
+        }
+        &:focus {
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.04);
+        }
+    }
+    &__btn {
+        @include main-btn(10px,20px);
+        font-weight: bold;
+        padding-bottom: 9px;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+        &:hover {
+            background-color: $c-primary-hover;
+        }
+    }
+}

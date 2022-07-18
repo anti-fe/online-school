@@ -1458,4 +1458,130 @@ a {
   -ms-transform: translateY(-3px);
   -o-transform: translateY(-3px);
 }
+
+.subscribe {
+  margin-top: 80px;
+  padding: 80px 15px;
+}
+
+@media (max-width: 426px) {
+  .subscribe {
+    padding: 50px 15px;
+    margin-top: 50px;
+  }
+}
+
+.subscribe__header {
+  margin-bottom: 60px;
+}
+
+.subscribe__header > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.subscribe__above-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .2px;
+  color: #96BB7C;
+  text-align: center;
+}
+
+.subscribe__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: .2px;
+  color: #252B42;
+  text-align: center;
+}
+
+.subscribe__descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .2px;
+  color: #737373;
+  max-width: 463px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.subscribe__form {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-direction: row;
+  max-width: 460px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 0 auto;
+}
+
+.subscribe__input {
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+  padding: 8px 20px 7px 20px;
+  outline: none;
+  background: #F9F9F9;
+  border: 1px solid #E6E6E6;
+  width: 100%;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+}
+
+.subscribe__input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  opacity: .5;
+  color: #737373;
+}
+
+.subscribe__input:focus {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.04);
+}
+
+.subscribe__btn {
+  cursor: pointer;
+  background-color: #96BB7C;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-weight: bold;
+  padding-bottom: 9px;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.subscribe__btn:hover {
+  background-color: #87A871;
+}
 /*# sourceMappingURL=style.css.map */
