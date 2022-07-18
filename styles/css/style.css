@@ -1584,4 +1584,75 @@ a {
 .subscribe__btn:hover {
   background-color: #87A871;
 }
+
+.footer {
+  margin-top: 80px;
+  padding: 0 15px;
+  position: relative;
+}
+
+@media (max-width: 426px) {
+  .footer {
+    margin-top: 50px;
+  }
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #E9E9E9;
+}
+
+.footer__wrapper {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(130px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .footer__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer__col-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .2px;
+  color: #252B42;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer__col-name {
+    cursor: pointer;
+  }
+}
+
+.footer__col-items {
+  list-style-type: none;
+}
+
+.footer__col-items > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer__col-items {
+    display: none;
+  }
+}
+
+.footer__col-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .2px;
+  color: #737373;
+}
 /*# sourceMappingURL=style.css.map */
