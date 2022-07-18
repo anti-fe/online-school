@@ -1,0 +1,96 @@
+.courses {
+    margin-top: 80px;
+    padding: 80px 15px;
+    @media (max-width: 426px) {
+        padding: 50px 15px;
+        margin-top: 50px;
+    }
+    &__header {
+        margin-bottom: 60px;
+        & > *:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    &__above-title {
+        @include text-h6;
+        color: $c-primary;
+    }
+    &__title {
+        @include text-h2;
+        color: $c-text;
+    }
+    &__descr {
+        @include text-p;
+        color: $c-second-text;
+        max-width: 463px;
+    }
+    &__cards-list {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(175px, 1fr));
+        grid-template-rows: repeat(1, 1fr);
+        gap: 30px;
+        @media (max-width: 836px) {
+            grid-template-columns: repeat(2, minmax(175px, 1fr)); 
+            grid-template-rows: repeat(2, 1fr);
+        }
+        @media (max-width: 426px) {
+            gap: 10px;
+            grid-template-columns: repeat(1, minmax(175px, 1fr)); 
+        } 
+    }
+    &__card {
+        box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        &:hover {
+            transform: translateY(-10px);
+            -webkit-transform: translateY(-10px);
+            -moz-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+            -o-transform: translateY(-10px);
+        }
+    }
+    &__card-img {
+        height: 100%;
+        width: 100%;
+    }
+    &__body {
+        padding: 30px;
+    }
+    &__person {
+        margin-bottom: 15px;
+    }
+    &__name {
+        @include text-h5;
+        color: $c-text;
+        margin-bottom: 5px;
+        text-align: center; 
+    }
+    &__work {
+        @include text-small;
+        color: $c-second-text;
+        text-align: center; 
+    }
+    &__media {
+        @include flex(center, center, row);
+        gap: 20px;
+    }
+    &__media-item {
+        cursor: pointer;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        &:hover {
+            transform: translateY(-3px);
+            -webkit-transform: translateY(-3px);
+            -moz-transform: translateY(-3px);
+            -ms-transform: translateY(-3px);
+            -o-transform: translateY(-3px);
+        }
+    }
+}
