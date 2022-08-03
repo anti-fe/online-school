@@ -130,7 +130,7 @@ a {
 .header__main-photo {
   position: absolute;
   right: -90px;
-  top: -130px;
+  top: -120px;
   z-index: 5;
 }
 
@@ -1220,16 +1220,15 @@ a {
   .reviews__cards-list {
     grid-template-columns: minmax(200px, 1fr);
   }
-}
-
-.reviews__cards-list > *:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  bottom: 0%;
-  left: 0;
-  background-color: #F3F3F3;
+  .reviews__cards-list > *:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0%;
+    left: 0;
+    background-color: #F3F3F3;
+  }
 }
 
 @media (max-width: 992px) {
